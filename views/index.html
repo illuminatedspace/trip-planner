@@ -1,0 +1,31 @@
+{% extends 'layout.html' %}
+
+{% block title %}Your Trip{% endblock %}
+
+{% block content %}
+  <div id="app" class="clearfix">
+    <h1>Hello, I am the app!</h1>
+  </div>
+
+  Hotels:
+  <select name="hotels">
+    {% for hotel in hotels %}
+    <option>{{hotel.name}}</option>
+    {% endfor %}
+  </select>
+
+  Restaurants:
+  <select name="restaurants">
+    {% for restaurant in restaurants %}
+    <option>{{restaurant.name}}</option>
+    {% endfor %}
+  </select>
+
+  Activities:
+  <select name="activities">
+    {% for activity in activities %}
+    <option>{{activity.name}}</option>
+    {% endfor %}
+  </select>
+
+{% endblock %}

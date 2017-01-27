@@ -1,0 +1,33 @@
+{
+  "name": "tripplanner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:production": "node app.js",
+    "start:dev": "nodemon -e html,css,js app.js",
+    "start": "npm run start:dev",
+    "build:css": "node-sass -w -r assets/stylesheets -o public/stylesheets"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.16.0",
+    "bootstrap": "^3.3.7",
+    "express": "^4.14.0",
+    "jquery": "^3.1.1",
+    "morgan": "^1.7.0",
+    "nodemon": "^1.11.0",
+    "nunjucks": "^3.0.0",
+    "path-is-absolute": "^1.0.1",
+    "pg": "^6.1.2",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^3.30.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.3.0"
+  }
+}
