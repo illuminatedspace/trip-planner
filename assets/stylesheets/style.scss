@@ -1,2 +1,85 @@
-body {;
+$purple: #4b0082;
+$yellow: #fcd116;
+$ltYellow: #ffea8e;
+$white: #fdfdfd;
+/*$pacifico: font-family: 'Pacifico', cursive;*/
+
+body {
+  height: 1000px;
+}
+
+.navbar {
+  background-color: $purple;
+  &.navbar-default {
+    margin-bottom: 0;
+  }
+}
+
+.navbar-default {
+  .navbar-brand {
+    font-family: 'Pacifico', cursive;
+    color: $yellow;
+    font-size: 2em;
+    font-style: italic;
+  }
+  .navbar-nav {
+    &.active {
+      color: $white;
+        & a {
+          background-color: $yellow;
+        }
+    >li {
+      &.active {
+        color: $white;
+      }
+      > a {
+        color: $white;
+      }
+    }
+  }
+}
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+    .row {
+      height: 100%;
+        .col-lg-8, .col-lg-4 {
+          height: 100%;
+        }
+    }
+}
+
+#personal-strip, #day-selector-strip , #itinerary{
+  display: block;
+  padding: 25px;
+  font-size: 2em;
+}
+
+#itinerary {
+  height: 80%;
+}
+
+#personal-strip, #day-selector-strip{
+  height: 10%;
+}
+
+#personal-strip {
+  background-color: $white;
+  color: $purple;
+}
+
+#day-selector-strip {
+  background-color: $ltYellow;
+  color: $purple;
+    .btn-toolbar {
+      display: inline;
+      width: 100px;
+    }
+}
+
+#itinerary {
+  background-color: $purple;
+  color: $white;
 }

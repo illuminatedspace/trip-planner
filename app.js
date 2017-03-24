@@ -26,7 +26,7 @@ app.engine('html', nunjucks.render);
 db.sync()
   .then(() => {
     app.listen(3000, function(){
-      console.log('server listening');
+      console.log('server listening on port 3000');
     });
   })
   .catch(console.error);

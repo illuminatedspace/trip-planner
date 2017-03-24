@@ -1,0 +1,57 @@
+/*$pacifico: font-family: 'Pacifico', cursive;*/
+body {
+  height: 1000px; }
+
+.navbar {
+  background-color: #4b0082; }
+  .navbar.navbar-default {
+    margin-bottom: 0; }
+
+.navbar-default .navbar-brand {
+  font-family: 'Pacifico', cursive;
+  color: #fcd116;
+  font-size: 2em;
+  font-style: italic; }
+
+.navbar-default .navbar-nav.active {
+  color: #fdfdfd; }
+  .navbar-default .navbar-nav.active a {
+    background-color: #fcd116; }
+  .navbar-default .navbar-nav.active > li.active {
+    color: #fdfdfd; }
+  .navbar-default .navbar-nav.active > li > a {
+    color: #fdfdfd; }
+
+.container {
+  height: 100%;
+  width: 100%; }
+  .container .row {
+    height: 100%; }
+    .container .row .col-lg-8, .container .row .col-lg-4 {
+      height: 100%; }
+
+#personal-strip, #day-selector-strip, #itinerary {
+  display: block;
+  padding: 25px;
+  font-size: 2em; }
+
+#itinerary {
+  height: 80%; }
+
+#personal-strip, #day-selector-strip {
+  height: 10%; }
+
+#personal-strip {
+  background-color: #fdfdfd;
+  color: #4b0082; }
+
+#day-selector-strip {
+  background-color: #ffea8e;
+  color: #4b0082; }
+  #day-selector-strip .btn-toolbar {
+    display: inline;
+    width: 100px; }
+
+#itinerary {
+  background-color: #4b0082;
+  color: #fdfdfd; }
